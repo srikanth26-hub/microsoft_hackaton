@@ -1,0 +1,17 @@
+{
+  "name": "recallops",
+  "version": "1.0.0",
+  "description": "RecallOps - AI-Powered Incident Response Agent using Hindsight Memory",
+  "main": "server/src/app.js",
+  "scripts": {
+    "start": "node server/src/app.js",
+    "server": "node server/src/app.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client",
+    "seed": "node server/src/seed.js"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
